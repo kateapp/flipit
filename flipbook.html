@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Load the Paper.js library -->
+<script type="text/javascript" src="paper.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		
+<!-- Load external PaperScript and associate it with myCanvas -->
+<script type="text/paperscript" src="fbpaper.js" canvas="myCanvas"></script>
+
+
+<style>
+	body {
+		background-color: #f7f7f7;
+		font-family: Lato, sans-serif;
+	}
+	canvas{
+		background-color: white;
+		border-radius: 8px;
+		box-shadow: 0 1px 0 rgba(0,0,0,.1);
+		width: 100%;
+	}
+	.cta{
+
+		font-size: 42px;
+		font-weight: 300;
+		color: #444;
+		padding:10px;
+		position: absolute;
+		top: 35%;
+		left: 30%
+	}
+	
+	#next, #undo, #play{
+		color: #333;
+		background-color: #ebebeb;
+		border-radius: 4px;
+		outline: 0;
+		padding: 12px 16px;
+		cursor: pointer;
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+	
+	#next, #undo{
+		float: right;
+		margin-right: 10px;
+	}
+	
+	
+</style>
+
+
+</head>
+<body>
+		<div class="cta">Draw your flip here!</div>
+    <button id="next">next</button>
+		<button id="undo">undo</button>
+		<button id="play">play</button>
+    <canvas id="myCanvas" resize></canvas>
+    
+            
+</body>
+</html>
